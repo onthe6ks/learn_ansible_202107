@@ -1,6 +1,6 @@
 # learn_ansible_202107
 This repository is my study record for ansible
-
+mainly udemy(getting started ansible in Japanese) and my test sample
 
 ## setting
 
