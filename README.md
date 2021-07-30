@@ -1,10 +1,12 @@
 # learn_ansible_202107
+This repository is my study record for ansible
+
 
 ## setting
 
 change hosts(inventry file)
 
-## check syntax
+## check syntax(sample)
 ```
 ansible-playbook -i hosts --syntax-check playbook/loopMkdir.yml 
 
@@ -12,7 +14,7 @@ playbook: playbook/loopMkdir.yml
 ```
 
 
-## exe ansible-play book
+## exe ansible-play book(sample)
 ```
 ansible-playbook -i hosts playbook/loopMkdir.yml 
 
