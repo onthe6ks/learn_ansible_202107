@@ -43,7 +43,7 @@
 ## db-[99:101]-node.example.com
 
 
-[targertserver]
+[targetserver]
 10.0.1.190 ansible_ssh_user=ec2-user
 
 [my]
