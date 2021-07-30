@@ -1,0 +1,9 @@
+---
+# prepar /tmp/test.tar file
+- hosts: all
+  vars:
+  tasks:
+    - name: unarchive test.tar
+      unarchive:
+        src=/tmp/test.tar
+        dest=/tmp

@@ -1,0 +1,9 @@
+---
+- hosts: my
+  become: true
+  tasks:
+    - name: epel-release yum install
+      yum: name=epel-release
+    - name: sl command yum install
+      yum: name=sl
+

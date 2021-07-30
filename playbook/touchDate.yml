@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars:
+  tasks:
+    - name: Exe shell 
+      shell: date > date.txt
+      args:
+        chdir: /tmp/
+

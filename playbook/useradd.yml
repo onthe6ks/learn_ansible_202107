@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    username: hogehoge
+    password: testhogetest
+  tasks:
+    - name: useradd {{ username }}
+      user:
+        name={{ username }}
+        password={{ password | password_hash('sha512')}}
+        state=present
+

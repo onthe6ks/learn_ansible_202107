@@ -1,0 +1,11 @@
+---
+- hosts: my
+  vars:
+    test_url: https://www3.nhk.or.jp/news/html/20210730/k10013169271000.html
+  tasks:
+    - name: get tokyo2020 news page
+      get_url:
+        url={{ test_url }}
+        dest=/tmp/
+
+    

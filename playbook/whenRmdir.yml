@@ -1,0 +1,12 @@
+---
+# needs add option
+# ansible-play book -i hosts filename --extra-vars "start=y"
+- hosts: all
+  vars:
+  tasks:
+    - name: when start=y rmdir
+      file:
+        path=/tmp/test1
+        state=absent
+      when:
+        start == "y"

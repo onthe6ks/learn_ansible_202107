@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars:
+  tasks:
+    - name: Loop mkdir
+      file:
+        path=/tmp/{{ item }}
+        state=directory
+      with_items:
+        - test1
+        - test2
+        - test3

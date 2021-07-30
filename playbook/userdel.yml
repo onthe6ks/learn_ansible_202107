@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    username: hogehoge
+  tasks:
+    - name: userdel {{ username }}
+      user:
+        name={{ username }}
+        state=absent
+

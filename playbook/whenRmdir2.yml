@@ -1,0 +1,11 @@
+---
+- hosts: all
+  vars:
+    internal: y
+  tasks:
+    - name: when start=y rmdir
+      file:
+        path=/tmp/test2
+        state=absent
+      when:
+        internal == "y"
