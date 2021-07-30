@@ -6,7 +6,7 @@ Mainly udemy(getting started ansible in Japanese) and my test sample playbook.
 
 change hosts(inventry file)
 
-## check syntax(sample)
+## check syntax(sample) or dry-run(option --check)
 ```
 ansible-playbook -i hosts --syntax-check playbook/loopMkdir.yml 
 
@@ -41,6 +41,9 @@ PLAY RECAP *********************************************************************
 ## offen used command sampl
 
 ### check ping
+if terget-server didn't  exchange ssh-key and you required password, you have to add opptin -k
+
+
 ```
 $ ansible -i hosts my -m ping
 10.0.0.51 | SUCCESS => {
