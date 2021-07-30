@@ -1,0 +1,11 @@
+---
+- hosts: targetserver
+  become: yes
+  vars:
+    - username: hogehoge
+    - userpassword: foofoo
+  tasks:
+    - name: chnge user password
+      user:
+        name={{ username }}
+        password={{ userpassword | password_hash('sha512') }}
